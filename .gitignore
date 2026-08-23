@@ -1,0 +1,35 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Excel/PowerBI temp/lock files
+~$*.xlsx
+~$*.pbix
+*.pbix.bak
+
+# Large generated data (processed data is reproducible from src/generate_synthetic_data.py)
+# Raw and processed CSVs are intentionally tracked for portfolio reproducibility unless
+# they grow too large for git; uncomment below if needed.
+# data/raw/*.csv
+# data/processed/*.csv
+
+# Logs
+*.log
+
+# pytest cache
+.pytest_cache/

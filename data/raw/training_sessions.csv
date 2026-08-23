@@ -1,0 +1,62 @@
+training_session_id,session_date,business_unit,training_format,registered_count,attended_count,completion_count,facilitator,session_topic
+TR0001,2026-05-14,Retail Banking,Live Virtual,88,64,54,M. Chen,Advanced Data Analysis Features
+TR0002,2026-04-10,Retail Banking,Self-Paced eLearning,45,31,28,T. Nguyen,Responsible AI & Approved Use Cases
+TR0003,2026-01-21,Retail Banking,Self-Paced eLearning,64,42,37,R. Singh,Prompt Writing Basics
+TR0004,2026-05-26,Retail Banking,Live Virtual,116,70,67,J. Alvarez,Advanced Data Analysis Features
+TR0005,2026-03-13,Retail Banking,In-Person Workshop,26,14,12,L. Bianchi,Responsible AI & Approved Use Cases
+TR0006,2026-03-26,Retail Banking,In-Person Workshop,63,42,30,J. Alvarez,Northstar Assist Fundamentals
+TR0007,2026-04-17,Retail Banking,Self-Paced eLearning,98,64,57,T. Nguyen,Responsible AI & Approved Use Cases
+TR0008,2026-03-25,Retail Banking,Manager-Led Briefing,43,27,22,T. Nguyen,Northstar Assist Fundamentals
+TR0009,2026-01-27,Retail Banking,Live Virtual,42,24,19,T. Nguyen,Advanced Data Analysis Features
+TR0010,2026-06-01,Commercial Banking,Self-Paced eLearning,49,40,34,L. Bianchi,Advanced Data Analysis Features
+TR0011,2026-01-20,Commercial Banking,Live Virtual,60,47,40,M. Chen,Advanced Data Analysis Features
+TR0012,2026-02-17,Commercial Banking,Live Virtual,90,67,54,M. Chen,Northstar Assist Fundamentals
+TR0013,2026-04-10,Commercial Banking,In-Person Workshop,76,50,38,L. Bianchi,Prompt Writing Basics
+TR0014,2026-02-05,Commercial Banking,Self-Paced eLearning,89,73,60,T. Nguyen,Northstar Assist Fundamentals
+TR0015,2026-03-20,Commercial Banking,Live Virtual,30,21,18,J. Alvarez,Prompt Writing Basics
+TR0016,2026-02-10,Commercial Banking,Self-Paced eLearning,51,39,30,J. Alvarez,Responsible AI & Approved Use Cases
+TR0017,2026-03-18,Commercial Banking,Live Virtual,104,91,74,S. Okafor,Code Assistant Deep Dive
+TR0018,2026-02-19,Capital Markets,Self-Paced eLearning,20,16,14,L. Bianchi,Northstar Assist Fundamentals
+TR0019,2026-01-15,Capital Markets,Self-Paced eLearning,33,26,21,M. Chen,Code Assistant Deep Dive
+TR0020,2026-05-27,Capital Markets,In-Person Workshop,46,44,36,R. Singh,Code Assistant Deep Dive
+TR0021,2026-03-04,Capital Markets,Live Virtual,35,32,24,L. Bianchi,Code Assistant Deep Dive
+TR0022,2026-04-07,Capital Markets,Self-Paced eLearning,101,77,62,S. Okafor,Advanced Data Analysis Features
+TR0023,2026-04-22,Capital Markets,Self-Paced eLearning,30,23,19,T. Nguyen,Advanced Data Analysis Features
+TR0024,2026-06-01,Wealth Management,Live Virtual,103,77,58,S. Okafor,Responsible AI & Approved Use Cases
+TR0025,2026-02-26,Wealth Management,Live Virtual,55,34,25,L. Bianchi,Advanced Data Analysis Features
+TR0026,2026-04-14,Wealth Management,Self-Paced eLearning,117,106,87,R. Singh,Code Assistant Deep Dive
+TR0027,2026-02-24,Wealth Management,Self-Paced eLearning,54,40,33,L. Bianchi,Prompt Writing Basics
+TR0028,2026-01-13,Wealth Management,Live Virtual,53,39,29,L. Bianchi,Responsible AI & Approved Use Cases
+TR0029,2026-01-07,Wealth Management,Self-Paced eLearning,82,63,59,T. Nguyen,Code Assistant Deep Dive
+TR0030,2026-03-06,Operations,Manager-Led Briefing,34,19,18,S. Okafor,Advanced Data Analysis Features
+TR0031,2026-04-03,Operations,Live Virtual,115,76,61,T. Nguyen,Prompt Writing Basics
+TR0032,2026-03-16,Operations,In-Person Workshop,47,36,29,R. Singh,Advanced Data Analysis Features
+TR0033,2026-02-26,Operations,In-Person Workshop,82,63,52,R. Singh,Prompt Writing Basics
+TR0034,2026-04-17,Operations,Self-Paced eLearning,89,62,60,R. Singh,Responsible AI & Approved Use Cases
+TR0035,2026-02-05,Operations,Live Virtual,52,37,29,J. Alvarez,Code Assistant Deep Dive
+TR0036,2026-03-25,Operations,Self-Paced eLearning,21,12,11,S. Okafor,Advanced Data Analysis Features
+TR0037,2026-04-16,Technology,Manager-Led Briefing,54,44,40,R. Singh,Advanced Data Analysis Features
+TR0038,2026-05-27,Technology,Self-Paced eLearning,35,33,28,J. Alvarez,Responsible AI & Approved Use Cases
+TR0039,2026-06-04,Technology,Live Virtual,94,74,57,R. Singh,Advanced Data Analysis Features
+TR0040,2026-01-15,Technology,Self-Paced eLearning,69,61,42,J. Alvarez,Northstar Assist Fundamentals
+TR0041,2026-04-14,Technology,Self-Paced eLearning,50,43,33,M. Chen,Code Assistant Deep Dive
+TR0042,2026-01-07,Technology,In-Person Workshop,60,53,39,T. Nguyen,Prompt Writing Basics
+TR0043,2026-02-12,Technology,Live Virtual,30,27,21,M. Chen,Responsible AI & Approved Use Cases
+TR0044,2026-05-26,Risk and Compliance,Self-Paced eLearning,86,77,73,T. Nguyen,Advanced Data Analysis Features
+TR0045,2026-03-16,Risk and Compliance,Manager-Led Briefing,37,28,23,R. Singh,Prompt Writing Basics
+TR0046,2026-02-19,Risk and Compliance,Live Virtual,81,60,56,J. Alvarez,Northstar Assist Fundamentals
+TR0047,2026-05-28,Risk and Compliance,Self-Paced eLearning,62,47,39,R. Singh,Northstar Assist Fundamentals
+TR0048,2026-03-26,Risk and Compliance,Live Virtual,53,47,44,S. Okafor,Advanced Data Analysis Features
+TR0049,2026-04-16,Risk and Compliance,Live Virtual,59,52,40,T. Nguyen,Code Assistant Deep Dive
+TR0050,2026-03-10,Risk and Compliance,Manager-Led Briefing,22,20,18,J. Alvarez,Prompt Writing Basics
+TR0051,2026-02-13,Risk and Compliance,In-Person Workshop,52,35,31,M. Chen,Prompt Writing Basics
+TR0052,2026-03-05,Risk and Compliance,Self-Paced eLearning,118,101,92,S. Okafor,Code Assistant Deep Dive
+TR0053,2026-01-09,Risk and Compliance,Live Virtual,26,22,21,M. Chen,Prompt Writing Basics
+TR0054,2026-04-14,Corporate Functions,Self-Paced eLearning,43,28,22,R. Singh,Advanced Data Analysis Features
+TR0055,2026-05-18,Corporate Functions,Self-Paced eLearning,57,41,35,J. Alvarez,Code Assistant Deep Dive
+TR0056,2026-04-13,Corporate Functions,In-Person Workshop,61,46,33,L. Bianchi,Responsible AI & Approved Use Cases
+TR0057,2026-05-22,Corporate Functions,Live Virtual,79,59,41,R. Singh,Prompt Writing Basics
+TR0058,2026-05-26,Corporate Functions,Self-Paced eLearning,58,46,41,T. Nguyen,Code Assistant Deep Dive
+TR0059,2026-02-02,Corporate Functions,In-Person Workshop,31,23,21,T. Nguyen,Responsible AI & Approved Use Cases
+TR0060,2026-05-07,Corporate Functions,Live Virtual,32,25,23,R. Singh,Code Assistant Deep Dive
+TR0061,2026-02-04,Corporate Functions,Live Virtual,64,45,33,M. Chen,Northstar Assist Fundamentals

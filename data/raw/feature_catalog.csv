@@ -1,0 +1,9 @@
+feature_id,feature_name,feature_category,target_persona,release_date,core_feature_flag
+F01,Chat and Research,Research & Knowledge,All Employees,2026-01-05,True
+F02,Knowledge Search,Research & Knowledge,All Employees,2026-01-05,True
+F03,Document Summarization,Productivity,All Employees,2026-01-05,True
+F04,Meeting Notes,Productivity,All Employees,2026-01-05,True
+F05,Prompt Library,Enablement,All Employees,2026-01-05,True
+F06,Drafting Assistant,Productivity,Client-Facing Roles & Managers,2026-01-19,True
+F07,Data Analysis,Technical / Analytical,"Technical Roles (Analysts, Developers)",2026-02-02,False
+F08,Code Assistant,Technical / Analytical,Technical Roles (Developers),2026-02-16,False
