@@ -2,29 +2,49 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Jupyter
 .ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+jupyter_execute/
 
 # Virtual environments
 .venv/
 venv/
 env/
+*.egg-info/
 
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Editor/IDE
 .vscode/
 .idea/
+*.swp
 
-# Excel/PowerBI temp/lock files
+# Excel temp/lock/autosave files
 ~$*.xlsx
+~$*.xls
+~$*.csv
+*.xlsx.bak
+
+# Power BI local/temp files
 ~$*.pbix
 *.pbix.bak
+*.pbix.lock
+*.pbit.bak
+Cache.LOC/
 
-# Large generated data (processed data is reproducible from src/generate_synthetic_data.py)
-# Raw and processed CSVs are intentionally tracked for portfolio reproducibility unless
-# they grow too large for git; uncomment below if needed.
+# PostgreSQL local data (if a student stands up a local cluster in-repo)
+pgdata/
+*.sql.bak
+
+# Large generated data (raw/processed CSVs are reproducible via
+# src/generate_synthetic_data.py + src/transform_data.py). They are
+# intentionally tracked for portfolio reproducibility unless they grow too
+# large for git; uncomment below if needed.
 # data/raw/*.csv
 # data/processed/*.csv
 
@@ -33,3 +53,5 @@ Thumbs.db
 
 # pytest cache
 .pytest_cache/
+.coverage
+htmlcov/
