@@ -11,6 +11,7 @@ Missing feature_name in usage_events.csv,474,Retained as null; excluded from fea
 Negative session_duration_seconds in usage_events.csv,708,"Nulled the impossible negative value. The event record itself is kept (event_type, feature_name, etc. remain usable) but its duration is excluded from duration-based aggregations.",Resolved
 Negative estimated_minutes_saved in usage_events.csv,711,"Nulled the impossible negative value; excluded from the modeled time-saved aggregation. This field is a modeled estimate in all cases, never a measured value.",Resolved
 usage_events records timestamped before the user's assigned_access_date,472,Removed — violates the business rule that usage can only occur after access is granted; timestamp or access-date data for these rows cannot be trusted.,Resolved
+usage_events records timestamped after the rollout end date,0,Validated — no records found beyond the rollout window.,Validated (no issue found)
 Duplicate feedback_id rows in feedback.csv,7,"Removed exact-duplicate rows, keeping the first occurrence of each feedback_id.",Resolved
 Invalid/unparseable feedback_timestamp in feedback.csv,0,Validated — all feedback timestamps parsed successfully.,Validated (no issue found)
 Out-of-range rating_1_to_5 in feedback.csv,15,"Nulled ratings outside the valid 1-5 scale; sentiment_label, barrier_category, and free_text_feedback for these rows are retained since they remain informative.",Resolved

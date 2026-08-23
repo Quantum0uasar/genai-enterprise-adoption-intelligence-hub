@@ -144,9 +144,6 @@ def clean_users():
             "Resolved",
         )
 
-    bad_bu_before = ~df["business_unit"].str.strip().str.lower().isin(
-        [b.lower() for b in CANONICAL_BUSINESS_UNITS] + list(BUSINESS_UNIT_LABEL_MAP.keys())
-    )
     n_bu_variants = int((~df["business_unit"].isin(CANONICAL_BUSINESS_UNITS)).sum())
     df["business_unit"] = normalize_label(df["business_unit"], CANONICAL_BUSINESS_UNITS, BUSINESS_UNIT_LABEL_MAP)
     if n_bu_variants > 0:
@@ -194,7 +191,6 @@ def clean_users():
             "Accepted",
         )
 
-    n_missing_champion = int(df["manager_champion_flag"].isna().sum() + (df["manager_champion_flag"].astype(str).str.strip() == "").sum())
     df["manager_champion_flag"] = to_bool(df["manager_champion_flag"])
     df["eligible_for_access_flag"] = to_bool(df["eligible_for_access_flag"])
     n_missing_champion = int(df["manager_champion_flag"].isna().sum())
@@ -337,6 +333,29 @@ def clean_usage_events(clean_users_df):
         )
 
     df = df.drop(columns=["_access_date"])
+
+    # Validate events fall within the known 24-week rollout window (per
+    # calendar.csv). Any event dated after the rollout's last calendar day
+    # cannot be placed in dim_date and indicates a timestamp problem upstream.
+    calendar_raw = pd.read_csv(os.path.join(RAW_DIR, "calendar.csv"), dtype=str)
+    rollout_end = pd.to_datetime(calendar_raw["date"]).max()
+    beyond_rollout = df["event_timestamp"].dt.normalize() > rollout_end
+    n_beyond_rollout = int(beyond_rollout.sum())
+    if n_beyond_rollout > 0:
+        log_issue(
+            f"usage_events records timestamped after the rollout end date ({rollout_end.date()})",
+            n_beyond_rollout,
+            "Removed — falls outside the 24-week rollout window represented in "
+            "calendar.csv, so the event cannot be assigned a valid date-dimension key.",
+            "Resolved",
+        )
+        df = df[~beyond_rollout].reset_index(drop=True)
+    else:
+        log_issue(
+            "usage_events records timestamped after the rollout end date", 0,
+            "Validated — no records found beyond the rollout window.",
+            "Validated (no issue found)",
+        )
 
     df["platform"] = df["platform"].str.strip()
     df["event_type"] = df["event_type"].str.strip()

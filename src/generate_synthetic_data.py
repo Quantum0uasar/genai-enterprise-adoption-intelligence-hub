@@ -605,7 +605,8 @@ def generate_usage_events(users_df):
 
         if level == "none":
             if RNG.random() < 0.30:
-                open_dt = random_business_time(access_date + timedelta(days=int(RNG.integers(0, 5))))
+                open_date = min(access_date + timedelta(days=int(RNG.integers(0, 5))), ROLLOUT_END)
+                open_dt = random_business_time(open_date)
                 events.append(_make_event(event_seq, user_id, open_dt, "app_opened", week_number_of(open_dt)))
                 event_seq += 1
             continue
